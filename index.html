@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>나민재 포트폴리오</title>
+<meta name="description" content="역사를 플레이로 옮기는 게임 기획자 나민재의 포트폴리오 · PDF와 플레이 영상">
+<style>
+  /* One static page that opens anywhere without a login: PDFs, play clips and itch.io links. */
+  :root { --ink:#1b1d22; --muted:#5d6370; --line:#d9d4c8; --paper:#f6f1e6; --bg:#fbf8f1; --seal:#b0261e; --gold:#8a6a22; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --ink:#efe9dc; --muted:#a9a397; --line:#3a3730; --paper:#25231f; --bg:#171614; --seal:#d4483d; --gold:#c9a24e; } }
+  :root[data-theme="dark"] { --ink:#efe9dc; --muted:#a9a397; --line:#3a3730; --paper:#25231f; --bg:#171614; --seal:#d4483d; --gold:#c9a24e; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.65 "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; word-break: keep-all; }
+  a { color: inherit; }
+  a:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+  header img { width: 100%; display: block; }
+  .eyebrow { font-size: .75rem; letter-spacing: .14em; color: var(--gold); font-weight: 700; margin-top: 28px; }
+  h1 { font-family: "HCR Batang", "Batang", "Nanum Myeongjo", serif; font-size: clamp(1.7rem, 4.6vw, 2.6rem); line-height: 1.25; margin: 6px 0 10px; }
+  h2 { font-family: "HCR Batang", "Batang", "Nanum Myeongjo", serif; font-size: 1.35rem; margin: 40px 0 12px; padding-bottom: 6px; border-bottom: 2px solid var(--ink); }
+  h2 b { color: var(--seal); margin-right: 8px; }
+  .lead { font-size: 1.05rem; max-width: 40em; }
+  .docs { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+  .doc { display: block; text-decoration: none; background: var(--paper); border: 1px solid var(--line); border-top: 3px solid var(--seal); padding: 14px 16px; }
+  .doc strong { display: block; font-size: 1.05rem; }
+  .doc span { color: var(--muted); font-size: .88rem; }
+  .doc:hover strong { text-decoration: underline; }
+  .clips { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+  figure { margin: 0; }
+  video { width: 100%; display: block; background: #000; border: 1px solid var(--line); }
+  figcaption { font-size: .88rem; color: var(--muted); margin-top: 4px; }
+  table { width: 100%; border-collapse: collapse; font-size: .92rem; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { width: 30%; color: var(--muted); font-weight: 700; }
+  footer { margin: 48px 0 40px; padding-top: 14px; border-top: 1px solid var(--line); color: var(--muted); font-size: .85rem; }
+</style>
+</head>
+<body>
+<header><img src="img/banner.jpg" alt="근정전과 연표가 들어간 표지 그림 · 역사를 플레이로 옮기는 게임 기획자 나민재"></header>
+<main class="wrap">
+  <div class="eyebrow">GAME DESIGNER · PORTFOLIO 2026 · 게임 기획 (시스템 · 콘텐츠)</div>
+  <h1>역사를 플레이로 옮기는 게임 기획자, 나민재</h1>
+  <p class="lead">삼국지, 병자호란, 조선 스팀펑크, 6·25. 역사 속 한 장면을 직접 손으로 겪어 보는 게임을 만듭니다. 로그인 없이 바로 열리는 문서와 플레이 영상을 모아 두었습니다.</p>
+
+  <h2><b>一</b>문서 <small style="font-size:.8rem;color:var(--muted);font-family:'Malgun Gothic'">(一 일: 하나)</small></h2>
+  <div class="docs">
+    <a class="doc" href="portfolio.pdf"><strong>포트폴리오 PDF</strong><span>6쪽 · 게임 6편, 일하는 방식</span></a>
+    <a class="doc" href="gdd.pdf"><strong>다섯 개의 강 기획서</strong><span>9쪽 · 구간 표 · 규칙 · 상태 전환 · 밸런스 · 검산 · 결정 기록</span></a>
+    <a class="doc" href="playtest.pdf"><strong>관찰 테스트 기록지</strong><span>4쪽 · 진행 방법 · 기록지 · 질문지 · 종합표</span></a>
+  </div>
+
+  <h2><b>二</b>플레이 영상 <small style="font-size:.8rem;color:var(--muted);font-family:'Malgun Gothic'">(二 이: 둘)</small></h2>
+  <div class="clips">
+    <figure><video src="video/fiverivers_60s.mp4" controls preload="metadata" poster="img/03_dawn.jpg"></video><figcaption>다섯 개의 강 · 조작 학습과 조명탄 전투 (60초)</figcaption></figure>
+    <figure><video src="video/fiverivers_prototype_33s.mp4" controls preload="metadata" poster="img/02_tank.jpg"></video><figcaption>다섯 개의 강 · 초기 프로토타입의 전차와 편지 (33초)</figcaption></figure>
+    <figure><video src="video/ironink_45s.mp4" controls preload="metadata" poster="img/palace.jpg"></video><figcaption>철과 묵 · 근정전 전투 (45초)</figcaption></figure>
+  </div>
+
+  <h2><b>三</b>바로 플레이 <small style="font-size:.8rem;color:var(--muted);font-family:'Malgun Gothic'">(三 삼: 셋)</small></h2>
+  <table>
+    <tr><th>적벽추리</th><td><a href="https://na-min-jea.itch.io/red-cliffs-deduction">itch.io 데모</a> · 1인칭 추리 어드벤처</td></tr>
+    <tr><th>산성의 패: 병자호란</th><td><a href="https://na-min-jea.itch.io/fortress-hand-1636">itch.io</a> · 2D 카드 배틀</td></tr>
+    <tr><th>오염된숲</th><td><a href="https://na-min-jea.itch.io/2d-tower-dfnse">itch.io 웹 플레이</a> · 2.5D 타워 디펜스</td></tr>
+    <tr><th>철과 묵</th><td><a href="https://drive.google.com/file/d/1YmJB9vUofq5PzQrQZmTTIjlG6tur6QCu/view?usp=sharing">Windows 빌드 내려받기</a> · zip 1.65GB</td></tr>
+  </table>
+
+  <footer>나민재 · 게임 기획 (시스템 · 콘텐츠) · <a href="mailto:alslxhrl7@gmail.com">alslxhrl7@gmail.com</a> · 동양대학교 공공경영전공 (2021–2023), 문화재 발굴보존학과 (2015–2016)</footer>
+</main>
+</body>
+</html>
